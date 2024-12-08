@@ -1,0 +1,189 @@
+/* Base Styling */
+:root {
+  --primary-color: #0984e3;
+  --secondary-color: #6c5ce7;
+  --background-color: #81ecec;
+  --text-color: #2d3436;
+  --card-background: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle, var(--background-color), #74b9ff);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Components */
+.journal-container,
+.music-therapy,
+.poetry-corner {
+  background: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Journal */
+.mood-tracker {
+  margin-bottom: 2rem;
+}
+
+.mood-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.journal-entry textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+/* Music Therapy */
+.music-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.playlist-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.ambient-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Poetry Corner */
+.poetry-content {
+  min-height: 300px;
+  padding: 1rem;
+}
+
+.write-poetry {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.poem-preview {
+  white-space: pre-wrap;
+  line-height: 1.8;
+}
+
+/* Share Options */
+.share-options {
+  text-align: center;
+  padding: 2rem;
+}
+
+.share-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.share-buttons button {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background: var(--primary-color);
+  margin-top: 2rem;
+}
+
+/* Buttons */
+button {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .mood-buttons,
+  .playlist-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.journal-container,
+.music-therapy,
+.poetry-corner {
+  animation: fadeIn 0.5s ease-out;
+}
