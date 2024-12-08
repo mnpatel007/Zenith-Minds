@@ -4,6 +4,7 @@ Zenith AI is an innovative web application designed to assist high school studen
 Zenith AI's user-friendly interface, interactive features, and responsive design ensure a seamless experience across devices, while its focus on personalization sets it apart. From diving into personalized activities to sharing uplifting content with friends, Zenith AI is a supportive companion in the journey to mental well-being.
 
 Features of Zenith AI
+Express your feelings: Show your feelings and get help about what can be done next also share your feelings
 Mood-Based Music Playlists: Discover curated playlists for happy, calm, or motivated moods.
 Interactive Poetry Corner: Read and write inspiring poems with synchronized animations and soothing voiceovers.
 Social Sharing: Easily share inspirational content across platforms like WhatsApp and Instagram.
