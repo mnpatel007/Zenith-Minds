@@ -38,3 +38,11 @@ After executing this command, the application will be accessible on your local h
 Explore Zenith AI Online
 Zenith AI is also hosted online for a seamless, hassle-free experience. Visit the official website: [Zenith AI Official Website](https://spectacular-swan-ff6146.netlify.app/)
 
+## 📬 Contact
+
+For feedback, collaboration, or questions:
+
+- 📧 Email: meetnp007@gmail.com.com
+- 🌐 Portfolio: [meetpatel12.com](https://www.vitaely.me/meetpatel12)
+
+---
